@@ -1,12 +1,18 @@
 <template>
   <NuxtLayout>
-    <ContentBlock image="/construction_gdzxj0.png" alt="Site under construction">
-      <template #heading>
-        Courses
-      </template>
-      <template #description>
-        Still working on this page, it will be up soon.
-      </template>
-    </ContentBlock>
+    <div v-for="course in data" :key="course.uuid">
+      <NuxtLink :to="'/courses/' + course.slug" class="text-4xl font-semibold">
+        {{ course.title }}
+      </NuxtLink>
+      <div>{{ course.description }}</div>
+    </div>
   </NuxtLayout>
 </template>
+<script setup lang="ts">
+const supabase = useSupabaseClient()
+
+const { data } = await supabase
+  .from('courses')
+  .select('title, slug, description, uuid')
+
+</script>
