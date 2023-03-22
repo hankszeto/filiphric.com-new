@@ -106,7 +106,8 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@pinia/nuxt',
     '@vueuse/nuxt',
-    '@nuxtjs/plausible'
+    '@nuxtjs/plausible',
+    '@nuxtjs/supabase'
   ],
   nitro: {
     preset: 'vercel-edge',
@@ -125,10 +126,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      convertkitApiKey: 'WtEuO8Nrmgh8k5YuNpyfiQ',
-      // test
-      // stripeApiKey: 'pk_test_51KefBzBnBECxBVfm1vTgllxVJpoU0bdU4sHAsZiio5SDFZLmdZTQYfTbfOR1rfRzA382bpL125RUkSGWvmocmOdq00a1b8UHfB'
-      stripeApiKey: 'pk_live_51KefBzBnBECxBVfmEylMMx3HYzX4uzLsuxiG5M56wvvg9cJOiiFm96WwLeYVNvj2vlAC9phbDWeLP151bZhXGxcF00Yxg9Yq3s'
+      convertkitApiKey: '',
+      stripeApiKey: ''
     }
   },
   vite: {

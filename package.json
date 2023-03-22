@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@stripe/stripe-js": "^1.46.0",
+    "@supabase/supabase-js": "^2.12.0",
     "@vercel/edge": "^0.3.1",
     "fuse.js": "^6.6.2",
     "nuxt": "^3.2.3",
@@ -31,6 +32,7 @@
     "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/plausible": "^0.2.0",
+    "@nuxtjs/supabase": "^0.3.1",
     "@pinia/nuxt": "^0.4.6",
     "@types/js-yaml": "^4.0.5",
     "@types/prismjs": "^1.26.0",
